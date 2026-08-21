@@ -46,7 +46,10 @@ export function SiteHeader({ nav, ctaLabel, ctaHref }: SiteHeaderProps) {
       </button>
 
       {menuOpen && (
-        <div className="fixed inset-0 z-30 flex flex-col bg-[rgba(215,237,242,0.5)] backdrop-blur-md lg:hidden">
+        <div
+          className="fixed inset-0 z-30 flex flex-col bg-[rgba(215,237,242,0.5)] lg:hidden"
+          style={{ backdropFilter: "blur(40px) saturate(160%)" }}
+        >
           <button
             type="button"
             onClick={() => setMenuOpen(false)}
