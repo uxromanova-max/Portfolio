@@ -1,0 +1,144 @@
+{
+  "_status": "SCAFFOLD ONLY — same shape as brand.json, but the copy below is not written yet. Replace every \"TODO\" before this variant goes live. See project doc target-role-database.md / diana_skills-positioning-brief.md for the Product/Ops cluster framing to write from.",
+  "meta": {
+    "variant": "product",
+    "variantLabel": "Product Manager",
+    "name": "Diana Romanova",
+    "pageTitle": "Diana Romanova — Product & Operations Portfolio"
+  },
+  "nav": [
+    { "label": "About me", "href": "#about-me" },
+    { "label": "Capability map", "href": "#capability-map" },
+    { "label": "Case studies", "href": "#case-studies" },
+    { "label": "Skills & Tools", "href": "#skills-tools" },
+    { "label": "AI & Systems", "href": "#ai-systems" }
+  ],
+  "hero": {
+    "eyebrowKicker": "TODO",
+    "headlineLines": ["TODO", "TODO", "TODO"],
+    "headlineSupportingLine": "TODO — Product/Ops equivalent of the Brand hero's objection-handling line",
+    "subheadline": "TODO — Product Ops / Business Ops framing of the ORA Studio + founder experience (see target-role-database.md, role #1)",
+    "signatureName": "Diana Romanova",
+    "ctaLabel": "Get in touch",
+    "ctaHref": "#cta",
+    "photo": "/images/product/hero.jpg"
+  },
+  "whyMe": {
+    "eyebrow": "TODO",
+    "intro": "TODO",
+    "points": [
+      { "bold": "TODO", "text": "TODO" },
+      { "bold": "TODO", "text": "TODO" },
+      { "bold": "TODO", "text": "TODO" }
+    ]
+  },
+  "capabilityMap": {
+    "title": "Capability map",
+    "items": [
+      { "title": "TODO — e.g. Product Operations & Process Design", "description": "TODO" },
+      { "title": "TODO — e.g. Cross-functional Program Management", "description": "TODO" },
+      { "title": "TODO — e.g. Launch / GTM Readiness", "description": "TODO" },
+      { "title": "TODO — e.g. E-commerce & Commercial Operations", "description": "TODO" },
+      { "title": "TODO — e.g. AI-Enabled Workflow Automation", "description": "TODO" },
+      { "title": "TODO", "description": "TODO" }
+    ]
+  },
+  "caseStudies": {
+    "title": "Case studies",
+    "items": [
+      {
+        "id": "ora-studio",
+        "format": "standard",
+        "company": "ORA Studio",
+        "role": "TODO — Product/Ops framing of Founder role (see brief: 'Product Operations Lead' lens)",
+        "dateLocation": "Feb 2026 – Present · Warsaw",
+        "tldr": "TODO",
+        "context": "TODO",
+        "problem": "TODO",
+        "myRole": "TODO",
+        "researchInsight": "TODO",
+        "decisions": "TODO",
+        "whatIBuilt": ["TODO"],
+        "collaboration": "TODO",
+        "outcome": "TODO",
+        "whatILearned": "TODO",
+        "images": ["/images/product/case-ora-1.jpg"]
+      },
+      {
+        "id": "sweetcode-lab",
+        "format": "standard",
+        "company": "SWEETCODE Lab",
+        "role": "TODO",
+        "dateLocation": "TODO",
+        "tldr": "TODO — 8 concurrent projects, delivery, PM/dev coordination (per skills-positioning-brief.md)",
+        "context": "TODO",
+        "problem": "TODO",
+        "myRole": "TODO",
+        "researchInsight": "",
+        "decisions": "TODO",
+        "whatIBuilt": ["TODO"],
+        "collaboration": "TODO",
+        "outcome": "TODO",
+        "whatILearned": "",
+        "images": []
+      },
+      {
+        "id": "elevatic",
+        "format": "standard",
+        "company": "Elevatic",
+        "role": "TODO",
+        "dateLocation": "",
+        "tldr": "TODO",
+        "context": "TODO",
+        "problem": "TODO",
+        "myRole": "TODO",
+        "researchInsight": "",
+        "decisions": "TODO",
+        "whatIBuilt": ["TODO"],
+        "collaboration": "TODO",
+        "outcome": "TODO",
+        "whatILearned": "",
+        "images": []
+      }
+    ],
+    "alsoBrandWork": {
+      "title": "TODO — rename per cluster if needed (e.g. 'Also operations work')",
+      "text": "TODO"
+    }
+  },
+  "skillsTools": {
+    "title": "Skills & Tools",
+    "coreSkills": [
+      { "tierLabel": "TODO", "tierNote": "TODO", "text": "TODO" },
+      { "tierLabel": "TODO", "tierNote": "TODO", "text": "TODO" },
+      { "tierLabel": "TODO", "tierNote": "TODO", "text": "TODO" }
+    ],
+    "tools": [
+      { "tierLabel": "Daily", "tierNote": "strong command", "text": "TODO" },
+      { "tierLabel": "Solid", "tierNote": "working knowledge", "text": "TODO" },
+      { "tierLabel": "Medium", "tierNote": "not fluent", "text": "TODO" }
+    ]
+  },
+  "aiSystems": {
+    "title": "AI & Systems",
+    "eyebrow": "TODO",
+    "body": "TODO",
+    "diagramSteps": ["TODO", "TODO", "TODO"]
+  },
+  "cta": {
+    "eyebrow": "BOTTOM LINE",
+    "headline": "TODO",
+    "subheadline": "TODO",
+    "badges": [
+      "Based in Warsaw",
+      "Ukrainian citizen",
+      "Immediately available",
+      "Open to roles in Poland and EU-remote positions"
+    ],
+    "buttons": [
+      { "label": "Download CV", "href": "/cv/diana-romanova-product.pdf" },
+      { "label": "Email me", "href": "mailto:uxromanova@gmail.com" },
+      { "label": "LinkedIn", "href": "https://linkedin.com/in/REPLACE_ME" }
+    ]
+  }
+}

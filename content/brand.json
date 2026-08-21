@@ -1,0 +1,224 @@
+{
+  "meta": {
+    "variant": "brand",
+    "variantLabel": "Brand Manager — main",
+    "name": "Diana Romanova",
+    "pageTitle": "Diana Romanova — Brand & Marketing Portfolio"
+  },
+  "nav": [
+    { "label": "About me", "href": "#about-me" },
+    { "label": "Capability map", "href": "#capability-map" },
+    { "label": "Case studies", "href": "#case-studies" },
+    { "label": "Skills & Tools", "href": "#skills-tools" },
+    { "label": "AI & Systems", "href": "#ai-systems" }
+  ],
+  "hero": {
+    "eyebrowKicker": "more than once",
+    "headlineLines": ["I build brands", "from zero,", "end-to-end"],
+    "headlineSupportingLine": "without a Brand Manager title to hide behind.",
+    "subheadline": "Product & Brand builder with 6+ years across brand strategy, creative direction, and go-to-market execution — most recently as the founder who owned every brand decision for a consumer product, from first positioning line to the campaign that sold it.",
+    "signatureName": "Diana Romanova",
+    "ctaLabel": "Get in touch",
+    "ctaHref": "#cta",
+    "photo": "/images/brand/hero.jpg"
+  },
+  "whyMe": {
+    "eyebrow": "Why consider someone who's never had the title",
+    "intro": "Most Brand Manager roles exist to protect and grow a brand system someone else already built — a positioning statement, a brand book, a channel mix that's already working. I've built that system from a blank page, more than once, under real commercial pressure: my own budget, my own inventory, my own risk if the positioning was wrong.",
+    "points": [
+      {
+        "bold": "I've owned the full brand cycle, not a slice of it.",
+        "text": "Positioning → identity → go-to-market → creative execution → campaign across email, paid, organic, and creator channels — I ran all of it myself for ORA Studio, and significant parts of it for two other consumer brands (Elevatic, WAO)."
+      },
+      {
+        "bold": "I've led a creative team formally, with a real title.",
+        "text": "As Creative Director at Peachy, I hired, managed, and set creative standards for a team of designers — the same \"brief, direct, and manage creative output\" muscle that Brand Manager roles ask for when they say \"agency and stakeholder management.\""
+      },
+      {
+        "bold": "I've done this across categories I'd never touched before",
+        "text": "wellness, vitamins, social impact, music, hospitality, property tech — and produced credible brand work fast in each one. That's the \"test-and-learn,\" \"cultural fluency,\" \"unfamiliar territory\" instinct that shows up in nearly every posting in this space."
+      },
+      {
+        "bold": "I'm not going to oversell what I haven't done.",
+        "text": "I'm not a dashboards-and-attribution specialist — I'm the person who builds the brand and the story, runs the channels, and is quick to formalize the measurement layer once it exists. That honesty is the same judgment I'd bring to your brand."
+      }
+    ]
+  },
+  "capabilityMap": {
+    "title": "Capability map",
+    "items": [
+      { "title": "Brand Strategy & Positioning", "description": "messaging, brand architecture, tone of voice" },
+      { "title": "Integrated Campaign & GTM Planning", "description": "brief → execution → channel mix → iteration" },
+      { "title": "Creative Direction & Content Strategy", "description": "briefing, team leadership, design systems" },
+      { "title": "Consumer & Competitor Insight", "description": "market research synthesized into positioning decisions" },
+      { "title": "Agency & Stakeholder Management", "description": "team leadership, hiring, cross-functional coordination" },
+      { "title": "Channel Execution", "description": "email/CRM, paid social, SEO fundamentals, UGC & creator partnerships, e-commerce" },
+      { "title": "AI-Enabled Marketing Workflows", "description": "building and operating AI-assisted research, content, and ops systems" },
+      { "title": "Measurement & Reporting", "badge": "actively formalizing", "description": "hands-on channel experience, developing structured reporting practice" }
+    ]
+  },
+  "caseStudies": {
+    "title": "Case studies",
+    "items": [
+      {
+        "id": "ora-studio",
+        "format": "standard",
+        "company": "ORA Studio",
+        "role": "Founder & Brand/Marketing Lead",
+        "dateLocation": "Feb 2026 – Present · Warsaw",
+        "tldr": "Founded and built the entire brand — positioning, identity, go-to-market, and multi-channel marketing — for a consumer wellness product, while personally running the commercial engine behind it.",
+        "context": "Early-stage consumer wellness brand, built from a single idea with no existing market presence, no brand equity, and a real budget/supply-chain ceiling.",
+        "problem": "The brand needed a name, a positioning territory, an identity, and a go-to-market plan that could survive contact with a small budget — not a \"dream\" GTM plan.",
+        "myRole": "Founder, and the only person making brand and marketing decisions — I owned this end-to-end because there was no one to hand it to.",
+        "researchInsight": "I owned: category, competitor, and audience research to find a defensible positioning angle within a crowded wellness market.",
+        "decisions": "I owned: the product concept and brand positioning; the channel mix (email/CRM, paid social, SEO foundations, UGC and creator partnerships), chosen to match real budget rather than an idealized plan.",
+        "whatIBuilt": [
+          "Full brand identity and product line",
+          "Go-to-market content and campaign structure across email (Omnisend), paid social, organic/UGC, and creator partnerships",
+          "Brand's e-commerce experience (built the store myself, not just briefed a developer)",
+          "An operational documentation system (Notion/Excel) covering every brand and marketing decision",
+          "An AI-assisted workflow — ChatGPT-based agents connected to Notion and Omnisend — that I personally operate to speed up research, content drafts, and documentation"
+        ],
+        "collaboration": "I owned: direct coordination with manufacturers, creators/UGC partners, and freelance specialists as needed.",
+        "outcome": "Brand built and live in market; marketing and operating system in active daily use. [уточнить: добавим реальные цифры/скрины, как только будут готовы — без придуманных метрик]",
+        "whatILearned": "[заполнить вместе]",
+        "images": [
+          "/images/brand/case-ora-1.jpg",
+          "/images/brand/case-ora-2.jpg",
+          "/images/brand/case-ora-3.jpg",
+          "/images/brand/case-ora-4.jpg"
+        ]
+      },
+      {
+        "id": "elevatic",
+        "format": "standard",
+        "company": "Elevatic",
+        "role": "Brand & Product Contributor / Design Lead",
+        "dateLocation": "",
+        "tldr": "Took a vitamin startup from a raw product idea to a fully branded, multi-SKU consumer line with its own e-commerce store.",
+        "context": "Early-stage business building a range of vitamin products, without an existing brand or sales channel.",
+        "problem": "The company needed the product itself shaped, a brand identity that could scale across multiple SKUs, and a way to sell directly to consumers.",
+        "myRole": "Core brand and design owner; team coordination lead for the design work.",
+        "researchInsight": "",
+        "decisions": "I contributed to: tone of voice and positioning. I owned: per-product design decisions across the range.",
+        "whatIBuilt": [
+          "Brand identity and guidelines for the company and its products",
+          "Individual designs for each vitamin product type",
+          "An e-commerce website for direct sales"
+        ],
+        "collaboration": "I owned: managing several designers and coordinating directly with clients and developers.",
+        "outcome": "Brand and e-commerce site were delivered and used by the company. The site has since been redesigned by Elevatic, so this case is presented via archived material rather than a live link.",
+        "whatILearned": "",
+        "images": [
+          "/images/brand/case-elevatic-1.jpg",
+          "/images/brand/case-elevatic-2.jpg"
+        ]
+      },
+      {
+        "id": "wao",
+        "format": "standard",
+        "company": "WAO",
+        "role": "Brand & Product Concept Owner",
+        "dateLocation": "",
+        "tldr": "Built the brand identity, positioning, and every investor-facing asset for a charity/community app — from first concept to pitch-ready.",
+        "context": "A charity and community app, described by the team as similar in structure to Facebook — intended to help people find and join charitable organizations and communities.",
+        "problem": "The idea needed to become an investor-ready concept: a credible brand, a clear story, and materials that could hold up in a pitch.",
+        "myRole": "Owned the product concept and brand identity; owned all PR-facing visual work.",
+        "researchInsight": "I owned: research for the app and its category.",
+        "decisions": "I contributed to: brand positioning, tone of voice, and product architecture.",
+        "whatIBuilt": [
+          "Full brand identity and design system",
+          "Investor pitch decks, landing pages, and email materials",
+          "A CRM for the app, built from scratch, including feature proposals"
+        ],
+        "collaboration": "Worked within a team of two designers, developers, and a project manager; I personally participated in and presented the product on investor calls.",
+        "outcome": "Delivered an investor-ready concept and materials. No launch or adoption is claimed — this case is framed honestly as concept and fundraising-stage work.",
+        "whatILearned": "",
+        "images": [
+          "/images/brand/case-wao-1.jpg",
+          "/images/brand/case-wao-2.jpg"
+        ]
+      },
+      {
+        "id": "peachy",
+        "format": "leadership",
+        "company": "Peachy",
+        "role": "Creative Director",
+        "dateLocation": "Jan 2022 – Jan 2023 · New York",
+        "tldr": "Led and scaled a design team from the inside — hiring, standards, and workflow — as the person formally accountable for creative output.",
+        "whatIOwned": [
+          "Managed a team of 3–4 designers: priorities, workload allocation, quality, and day-to-day performance",
+          "Participated in hiring end-to-end — candidate screening, interviews, evaluation, onboarding",
+          "Designed and implemented a new design workflow and standardized processes across the team",
+          "Introduced a design system and consistent delivery standards",
+          "Ran performance reviews and ongoing creative direction and feedback"
+        ],
+        "whyItMatters": "Brand roles consistently ask for \"agency and stakeholder management\" and the ability to brief and manage creative output. This is that exact muscle — formalized, inside a real company structure, with a real title.",
+        "images": []
+      }
+    ],
+    "alsoBrandWork": {
+      "title": "Also brand work",
+      "text": "Additional brand work across categories: The Motel (music label) — built the full brand identity from scratch, supported by category research and PR visual content. Juice and Roots (marketing agency / women's wellness brand) — redesign and branding work completed as Creative Director."
+    }
+  },
+  "skillsTools": {
+    "title": "Skills & Tools",
+    "coreSkills": [
+      {
+        "tierLabel": "Core brand craft",
+        "tierNote": "hands-on across real projects",
+        "text": "Brand strategy & positioning · Integrated campaign & GTM planning · Creative direction, briefing & content strategy · Consumer, market & competitor research"
+      },
+      {
+        "tierLabel": "Channel & execution",
+        "tierNote": "strong, hands-on experience",
+        "text": "Agency & stakeholder management (formalized at Peachy) · Email/CRM marketing (Omnisend) · Paid social (Meta Ads) · SEO fundamentals · UGC & creator partnerships · E-commerce brand experience (builds stores herself, not only briefs)"
+      },
+      {
+        "tierLabel": "Currently formalizing",
+        "tierNote": "honest about the gap",
+        "text": "Marketing analytics & campaign measurement — extensive hands-on experience running campaigns across channels; actively building a more structured measurement and reporting practice. Budget/commercial ownership — managed real budget constraints as a founder; not yet formal large-scale P&L ownership."
+      }
+    ],
+    "tools": [
+      {
+        "tierLabel": "Daily",
+        "tierNote": "strong command",
+        "text": "Figma, Adobe Creative Suite, Notion, Canva, Shopify, ChatGPT/Claude/Gemini, Webflow-type site builders, Google Workspace"
+      },
+      {
+        "tierLabel": "Solid",
+        "tierNote": "working knowledge",
+        "text": "Omnisend and similar email tools, Meta Ads, Google Analytics and Search Console fundamentals, Slack/Jira/Asana, Miro/FigJam/XMind, GitHub"
+      },
+      {
+        "tierLabel": "Medium",
+        "tierNote": "not fluent",
+        "text": "Excel — used regularly for budgets, trackers, and supplier/operations documentation; not an advanced-formulas or pivot-table user"
+      }
+    ]
+  },
+  "aiSystems": {
+    "title": "AI & Systems",
+    "eyebrow": "How I use AI to run brand and marketing work faster",
+    "body": "At ORA Studio, I built and personally operate an AI-assisted system that turns research, positioning, content, and documentation into a repeatable workflow instead of starting from a blank page every time — a set of specialized agents I direct for specific parts of the brand and marketing process. I run this myself day to day, which means I understand exactly where AI speeds up brand and marketing work, and where it still needs a human judgment call. I'm currently expanding the system to be more automated and less manually operated.",
+    "diagramSteps": ["Architect agent", "Connectors", "Team of agents", "Fully automated system"]
+  },
+  "cta": {
+    "eyebrow": "BOTTOM LINE",
+    "headline": "Ready when you are.",
+    "subheadline": "I've made the case above. What's left isn't a skills question — it's a logistics one.",
+    "badges": [
+      "Based in Warsaw",
+      "Ukrainian citizen",
+      "Immediately available",
+      "Open to roles in Poland and EU-remote positions"
+    ],
+    "buttons": [
+      { "label": "Download CV", "href": "/cv/diana-romanova-brand.pdf" },
+      { "label": "Email me", "href": "mailto:uxromanova@gmail.com" },
+      { "label": "LinkedIn", "href": "https://linkedin.com/in/REPLACE_ME" }
+    ]
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "_status": "SCAFFOLD ONLY — copy not written yet, replace every TODO. IMPORTANT FLAG: diana_skills-positioning-brief.md section 3 says the EA/CoS cluster was planned WITHOUT separate case-study cards — just a narrative block + a software-skills block, built on ORA + the three formal companies + freelance work. That's different from Brand/Product, which both use repeated case-study cards. This file still uses the shared schema so it fits the same components, but 'caseStudies.items' only has one entry (ORA) rather than 4 — confirm with Diana whether that's the right call before treating this section as final, or whether it needs a genuinely different narrative-block component instead of the case-card component.",
+  "meta": {
+    "variant": "assistant",
+    "variantLabel": "Assistant (EA / Chief of Staff)",
+    "name": "Diana Romanova",
+    "pageTitle": "Diana Romanova — Executive/Business Assistant Portfolio"
+  },
+  "nav": [
+    { "label": "About me", "href": "#about-me" },
+    { "label": "Capability map", "href": "#capability-map" },
+    { "label": "Case studies", "href": "#case-studies" },
+    { "label": "Skills & Tools", "href": "#skills-tools" },
+    { "label": "AI & Systems", "href": "#ai-systems" }
+  ],
+  "hero": {
+    "eyebrowKicker": "TODO",
+    "headlineLines": ["TODO", "TODO", "TODO"],
+    "headlineSupportingLine": "TODO",
+    "subheadline": "TODO — EA/Chief of Staff framing of the ORA Studio ops-backbone + founder experience (see target-role-database.md, role #5)",
+    "signatureName": "Diana Romanova",
+    "ctaLabel": "Get in touch",
+    "ctaHref": "#cta",
+    "photo": "/images/assistant/hero.jpg"
+  },
+  "whyMe": {
+    "eyebrow": "TODO",
+    "intro": "TODO",
+    "points": [
+      { "bold": "TODO", "text": "TODO" },
+      { "bold": "TODO", "text": "TODO" },
+      { "bold": "TODO", "text": "TODO" }
+    ]
+  },
+  "capabilityMap": {
+    "title": "Capability map",
+    "items": [
+      { "title": "TODO — e.g. Executive Communications & Materials", "description": "TODO" },
+      { "title": "TODO — e.g. Confidential Information Handling", "description": "TODO" },
+      { "title": "TODO — e.g. Document & Knowledge Systems", "description": "TODO" },
+      { "title": "TODO — e.g. Cross-functional Coordination", "description": "TODO" },
+      { "title": "TODO — e.g. AI-Enabled Workflow Automation", "description": "TODO" },
+      { "title": "TODO", "description": "TODO" }
+    ]
+  },
+  "caseStudies": {
+    "title": "Case studies",
+    "items": [
+      {
+        "id": "ora-studio",
+        "format": "standard",
+        "company": "ORA Studio",
+        "role": "TODO — Ops-backbone / Chief-of-Staff framing of the Founder role",
+        "dateLocation": "Feb 2026 – Present · Warsaw",
+        "tldr": "TODO",
+        "context": "TODO",
+        "problem": "TODO",
+        "myRole": "TODO",
+        "researchInsight": "TODO",
+        "decisions": "TODO",
+        "whatIBuilt": ["TODO"],
+        "collaboration": "TODO",
+        "outcome": "TODO",
+        "whatILearned": "TODO",
+        "images": ["/images/assistant/case-ora-1.jpg"]
+      }
+    ],
+    "alsoBrandWork": {
+      "title": "TODO — or remove this block for this variant if the narrative-block approach is used instead",
+      "text": "TODO"
+    }
+  },
+  "skillsTools": {
+    "title": "Skills & Tools",
+    "coreSkills": [
+      { "tierLabel": "TODO", "tierNote": "TODO", "text": "TODO" },
+      { "tierLabel": "TODO", "tierNote": "TODO", "text": "TODO" },
+      { "tierLabel": "TODO", "tierNote": "TODO", "text": "TODO" }
+    ],
+    "tools": [
+      { "tierLabel": "Daily", "tierNote": "strong command", "text": "TODO" },
+      { "tierLabel": "Solid", "tierNote": "working knowledge", "text": "TODO" },
+      { "tierLabel": "Medium", "tierNote": "not fluent", "text": "TODO" }
+    ]
+  },
+  "aiSystems": {
+    "title": "AI & Systems",
+    "eyebrow": "TODO",
+    "body": "TODO",
+    "diagramSteps": ["TODO", "TODO", "TODO"]
+  },
+  "cta": {
+    "eyebrow": "BOTTOM LINE",
+    "headline": "TODO",
+    "subheadline": "TODO",
+    "badges": [
+      "Based in Warsaw",
+      "Ukrainian citizen",
+      "Immediately available",
+      "Open to roles in Poland and EU-remote positions"
+    ],
+    "buttons": [
+      { "label": "Download CV", "href": "/cv/diana-romanova-assistant.pdf" },
+      { "label": "Email me", "href": "mailto:uxromanova@gmail.com" },
+      { "label": "LinkedIn", "href": "https://linkedin.com/in/REPLACE_ME" }
+    ]
+  }
+}
