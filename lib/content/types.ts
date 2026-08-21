@@ -16,7 +16,10 @@ export type HeroContent = {
   signatureName: string;
   ctaLabel: string;
   ctaHref: string;
-  photo: string;
+  photo: {
+    desktop: string;
+    mobile: string;
+  };
 };
 
 export type SiteContent = {

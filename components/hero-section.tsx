@@ -118,12 +118,20 @@ export function HeroSection({ nav, hero }: HeroSectionProps) {
           className="relative z-0 aspect-[402/322] w-full lg:absolute lg:left-[52.34%] lg:top-[25.24%] lg:aspect-auto lg:h-[58.89%] lg:w-[47.66%]"
         >
           <Image
-            src={hero.photo}
+            src={hero.photo.mobile}
             alt={hero.signatureName}
             fill
             priority
-            sizes="(min-width: 1024px) 50vw, 100vw"
-            className="object-cover object-left-bottom"
+            sizes="100vw"
+            className="block object-cover lg:hidden"
+          />
+          <Image
+            src={hero.photo.desktop}
+            alt={hero.signatureName}
+            fill
+            priority
+            sizes="50vw"
+            className="hidden object-cover lg:block"
           />
         </ParallaxLayer>
 
@@ -131,9 +139,9 @@ export function HeroSection({ nav, hero }: HeroSectionProps) {
           x={springX}
           y={springY}
           depth={12}
-          className="absolute left-6 top-8 z-10 lg:left-[75.08%] lg:top-[23.32%]"
+          className="absolute left-6 top-8 z-10 max-w-[80px] lg:left-[75.08%] lg:top-[23.32%] lg:max-w-none"
         >
-          <p className="text-[clamp(0.7rem,0.95vw,0.875rem)] whitespace-nowrap">
+          <p className="text-[clamp(0.7rem,0.95vw,0.875rem)] lg:whitespace-nowrap">
             {hero.signatureName}
           </p>
         </ParallaxLayer>
