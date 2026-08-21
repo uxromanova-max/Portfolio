@@ -69,7 +69,7 @@ export function HeroSection({ nav, hero }: HeroSectionProps) {
         x={springX}
         y={springY}
         depth={20}
-        className="relative px-6 lg:absolute lg:left-[4.375%] lg:top-[15.26%] lg:w-[67.58%] lg:px-0"
+        className="relative z-10 px-6 lg:absolute lg:left-[4.375%] lg:top-[15.26%] lg:w-[67.58%] lg:px-0"
       >
         <h1
           className="bg-clip-text font-headline text-[clamp(1.5rem,7.5vw,3.875rem)] leading-[0.95] text-transparent uppercase"
@@ -90,7 +90,7 @@ export function HeroSection({ nav, hero }: HeroSectionProps) {
         x={springX}
         y={springY}
         depth={14}
-        className="relative px-6 lg:absolute lg:left-[4.375%] lg:top-[59.74%] lg:px-0"
+        className="relative z-10 px-6 lg:absolute lg:left-[4.375%] lg:top-[59.74%] lg:px-0"
       >
         <p className="text-[clamp(1.1rem,2.19vw,1.75rem)] uppercase">{hero.eyebrowKicker}</p>
       </ParallaxLayer>
@@ -99,7 +99,7 @@ export function HeroSection({ nav, hero }: HeroSectionProps) {
         x={springX}
         y={springY}
         depth={16}
-        className="relative px-6 lg:absolute lg:left-[15.08%] lg:top-[64.54%] lg:w-[40.16%] lg:px-0"
+        className="relative z-10 px-6 lg:absolute lg:left-[15.08%] lg:top-[64.54%] lg:w-[40.16%] lg:px-0"
       >
         <p className="text-[clamp(1.1rem,2.66vw,2.125rem)] leading-[1.1] uppercase">
           {hero.headlineSupportingLine}
@@ -110,7 +110,7 @@ export function HeroSection({ nav, hero }: HeroSectionProps) {
         x={springX}
         y={springY}
         depth={10}
-        className="relative aspect-[4/5] w-full lg:absolute lg:left-[24.375%] lg:top-[25.24%] lg:aspect-auto lg:h-[74.88%] lg:w-[87.19%]"
+        className="relative z-0 aspect-[4/5] w-full lg:absolute lg:left-[24.375%] lg:top-[25.24%] lg:aspect-auto lg:h-[74.88%] lg:w-[87.19%]"
       >
         <Image
           src={hero.photo}
@@ -126,7 +126,7 @@ export function HeroSection({ nav, hero }: HeroSectionProps) {
         x={springX}
         y={springY}
         depth={12}
-        className="relative px-6 lg:absolute lg:left-[79.69%] lg:top-[20.31%] lg:px-0"
+        className="relative z-10 px-6 lg:absolute lg:left-[79.69%] lg:top-[20.31%] lg:px-0"
       >
         <p className="text-[clamp(0.7rem,0.95vw,0.875rem)] whitespace-nowrap">
           {hero.signatureName}
