@@ -20,14 +20,14 @@ export function SiteHeader({ nav, ctaLabel, ctaHref }: SiteHeaderProps) {
     <header className="relative z-20 flex items-center justify-end gap-12 px-6 py-5 lg:contents">
       <Link
         href={ctaHref}
-        className="flex items-center justify-center bg-white px-6 py-3 text-[clamp(0.65rem,0.85vw,0.75rem)] uppercase hover:opacity-80 transition-opacity lg:absolute lg:top-[37px] lg:right-[24px] lg:z-20 lg:text-[0.75rem]"
+        className="flex items-center justify-center bg-white px-6 py-3 text-[clamp(0.65rem,0.85vw,0.75rem)] uppercase hover:opacity-80 transition-opacity lg:absolute lg:top-[37px] lg:right-[24px] lg:z-20 lg:text-[0.75rem] xl:right-[54px]"
       >
         {ctaLabel}
       </Link>
 
       <nav
         aria-label="Primary"
-        className="hidden whitespace-nowrap text-[clamp(0.7rem,0.95vw,0.875rem)] uppercase lg:absolute lg:left-[4.375%] lg:top-[48px] lg:z-20 lg:flex lg:items-center lg:gap-2 lg:text-[0.875rem]"
+        className="hidden whitespace-nowrap text-[clamp(0.7rem,0.95vw,0.875rem)] uppercase lg:absolute lg:left-[4.375%] lg:top-[48px] lg:z-20 lg:flex lg:items-center lg:gap-2 lg:text-[0.8125rem] xl:left-[17.66%] xl:gap-8"
       >
         {nav.map((item) => (
           <a key={item.href} href={item.href} className="hover:opacity-60 transition-opacity">

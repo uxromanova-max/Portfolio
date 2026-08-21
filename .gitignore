@@ -36,6 +36,10 @@ yarn-error.log*
 # vercel
 .vercel
 
+# Claude Code local skills (installed per-machine, not part of the site)
+/.claude/skills/
+/skills-lock.json
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
