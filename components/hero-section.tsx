@@ -72,7 +72,7 @@ export function HeroSection({ nav, hero }: HeroSectionProps) {
         depth={20}
         className="relative z-10 px-6 lg:absolute lg:left-[4.375%] lg:top-[127px] lg:px-0"
       >
-        <h1 className="font-headline text-[clamp(1.5rem,7.5vw,3.875rem)] leading-[1.03] text-black uppercase lg:whitespace-nowrap">
+        <h1 className="font-headline text-[clamp(1.5rem,7.5vw,3.875rem)] leading-[1.03] text-black uppercase lg:text-[3.875rem] lg:whitespace-nowrap">
           {hero.headlineLines.map((line) => (
             <span key={line} className="block">
               {line}
@@ -81,24 +81,19 @@ export function HeroSection({ nav, hero }: HeroSectionProps) {
         </h1>
       </ParallaxLayer>
 
+      {/* Eyebrow + supporting line are one group: their relative position and the gap
+          between them never change, so they share a single parallax layer and bottom anchor
+          rather than being positioned independently */}
       <ParallaxLayer
         x={springX}
         y={springY}
-        depth={14}
-        className="relative z-10 pr-6 pl-[33%] lg:absolute lg:left-[9.53%] lg:bottom-[231px] lg:px-0"
+        depth={15}
+        className="relative z-10 flex flex-col gap-2 lg:absolute lg:left-[9.53%] lg:bottom-[102px] lg:gap-3"
       >
-        <p className="text-[clamp(0.875rem,4vw,1.25rem)] uppercase lg:text-[clamp(0.9rem,1.56vw,1.25rem)]">
+        <p className="pr-6 pl-[33%] text-[clamp(0.875rem,4vw,1.25rem)] uppercase lg:pr-0 lg:pl-0 lg:text-[1.25rem]">
           {hero.eyebrowKicker}
         </p>
-      </ParallaxLayer>
-
-      <ParallaxLayer
-        x={springX}
-        y={springY}
-        depth={16}
-        className="relative z-10 px-6 lg:absolute lg:left-[15.08%] lg:bottom-[102px] lg:w-[35.08%] lg:px-0"
-      >
-        <p className="text-[clamp(1.1rem,5vw,1.75rem)] uppercase lg:text-[clamp(1rem,2.19vw,1.75rem)] leading-[1.15]">
+        <p className="px-6 text-[clamp(1.1rem,5vw,1.75rem)] uppercase leading-[1.15] lg:w-[35.08vw] lg:px-0 lg:ml-[71px] lg:text-[1.75rem]">
           {hero.headlineSupportingLine.map((segment) => (
             <span
               key={segment.text}
@@ -142,7 +137,7 @@ export function HeroSection({ nav, hero }: HeroSectionProps) {
           depth={12}
           className="absolute left-6 top-8 z-10 max-w-[80px] lg:left-[47.7%] lg:top-[-16px] lg:max-w-none"
         >
-          <p className="text-[clamp(0.7rem,0.95vw,0.875rem)] lg:whitespace-nowrap">
+          <p className="text-[clamp(0.7rem,0.95vw,0.875rem)] lg:text-[0.875rem] lg:whitespace-nowrap">
             {hero.signatureName}
           </p>
         </ParallaxLayer>

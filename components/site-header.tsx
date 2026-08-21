@@ -13,6 +13,15 @@ type SiteHeaderProps = {
 const NOISE_TEXTURE =
   "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")";
 
+// Below 1600px, a screen-centered nav would collide with the CTA button (nav's
+// width is fixed — text no longer shrinks with viewport — so it needs a hard
+// cutover to the menu button instead of getting squeezed). Desktop layout
+// otherwise still starts at `lg` (1024px); only the nav-vs-hamburger switch
+// uses this wider, separately-measured breakpoint. Tailwind needs the full
+// class strings written out literally (no template interpolation) to detect
+// them, so the value is duplicated across the classNames below rather than
+// built from a shared constant.
+
 export function SiteHeader({ nav, ctaLabel, ctaHref }: SiteHeaderProps) {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -20,14 +29,14 @@ export function SiteHeader({ nav, ctaLabel, ctaHref }: SiteHeaderProps) {
     <header className="relative z-20 flex items-center justify-center px-6 py-5 lg:contents">
       <Link
         href={ctaHref}
-        className="flex items-center justify-center bg-white px-6 py-3 text-[clamp(0.65rem,0.85vw,0.75rem)] uppercase hover:opacity-80 transition-opacity lg:absolute lg:left-[82.66%] lg:top-[37px] lg:z-20"
+        className="flex items-center justify-center bg-white px-6 py-3 text-[clamp(0.65rem,0.85vw,0.75rem)] uppercase hover:opacity-80 transition-opacity lg:absolute lg:top-[37px] lg:right-[54px] lg:z-20 lg:text-[0.75rem]"
       >
         {ctaLabel}
       </Link>
 
       <nav
         aria-label="Primary"
-        className="hidden whitespace-nowrap text-[clamp(0.7rem,0.95vw,0.875rem)] uppercase lg:absolute lg:left-[17.66%] lg:top-[48px] lg:z-20 lg:flex lg:items-center lg:gap-8"
+        className="hidden whitespace-nowrap text-[clamp(0.7rem,0.95vw,0.875rem)] uppercase min-[1600px]:absolute min-[1600px]:left-1/2 min-[1600px]:top-[48px] min-[1600px]:z-20 min-[1600px]:flex min-[1600px]:-translate-x-1/2 min-[1600px]:items-center min-[1600px]:gap-8 min-[1600px]:text-[0.875rem]"
       >
         {nav.map((item) => (
           <a key={item.href} href={item.href} className="hover:opacity-60 transition-opacity">
@@ -41,7 +50,7 @@ export function SiteHeader({ nav, ctaLabel, ctaHref }: SiteHeaderProps) {
         onClick={() => setMenuOpen(true)}
         aria-label="Open menu"
         aria-expanded={menuOpen}
-        className="absolute right-6 top-1/2 -translate-y-1/2 lg:hidden"
+        className="absolute right-6 top-1/2 -translate-y-1/2 lg:top-[42px] lg:translate-y-0 min-[1600px]:hidden"
       >
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden>
           <path d="M3 5H11M3 12H16M3 19H21" stroke="black" strokeWidth="1.5" strokeLinejoin="round" />
@@ -50,7 +59,7 @@ export function SiteHeader({ nav, ctaLabel, ctaHref }: SiteHeaderProps) {
 
       {menuOpen && (
         <div
-          className="fixed inset-0 z-30 bg-[rgba(215,237,242,0.55)] lg:hidden"
+          className="fixed inset-0 z-30 bg-[rgba(215,237,242,0.55)] min-[1600px]:hidden"
           style={{ backdropFilter: "blur(20px) saturate(180%)" }}
         >
           <div
