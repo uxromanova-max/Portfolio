@@ -84,9 +84,11 @@ export function HeroSection({ nav, hero }: HeroSectionProps) {
         x={springX}
         y={springY}
         depth={14}
-        className="relative z-10 px-6 lg:absolute lg:left-[9.53%] lg:top-[53%] lg:px-0"
+        className="relative z-10 pr-6 pl-[33%] lg:absolute lg:left-[9.53%] lg:top-[53%] lg:px-0"
       >
-        <p className="text-[clamp(0.9rem,1.56vw,1.25rem)] uppercase">{hero.eyebrowKicker}</p>
+        <p className="text-[clamp(0.875rem,4vw,1.25rem)] uppercase lg:text-[clamp(0.9rem,1.56vw,1.25rem)]">
+          {hero.eyebrowKicker}
+        </p>
       </ParallaxLayer>
 
       <ParallaxLayer
@@ -95,7 +97,7 @@ export function HeroSection({ nav, hero }: HeroSectionProps) {
         depth={16}
         className="relative z-10 px-6 lg:absolute lg:left-[15.08%] lg:top-[57.45%] lg:w-[35.08%] lg:px-0"
       >
-        <p className="text-[clamp(1rem,2.19vw,1.75rem)] leading-[1.15] uppercase">
+        <p className="text-[clamp(1.1rem,5vw,1.75rem)] uppercase lg:text-[clamp(1rem,2.19vw,1.75rem)] leading-[1.15]">
           {hero.headlineSupportingLine.map((segment) => (
             <span
               key={segment.text}
@@ -107,32 +109,35 @@ export function HeroSection({ nav, hero }: HeroSectionProps) {
         </p>
       </ParallaxLayer>
 
-      <ParallaxLayer
-        x={springX}
-        y={springY}
-        depth={10}
-        className="relative z-0 aspect-[4/5] w-full lg:absolute lg:left-[52.34%] lg:top-[25.24%] lg:aspect-auto lg:h-[58.89%] lg:w-[47.66%]"
-      >
-        <Image
-          src={hero.photo}
-          alt={hero.signatureName}
-          fill
-          priority
-          sizes="(min-width: 1024px) 50vw, 100vw"
-          className="object-cover object-bottom"
-        />
-      </ParallaxLayer>
+      {/* Photo + signature share a coordinate frame on mobile (signature overlays the photo's corner) */}
+      <div className="relative lg:contents">
+        <ParallaxLayer
+          x={springX}
+          y={springY}
+          depth={10}
+          className="relative z-0 aspect-[402/322] w-full lg:absolute lg:left-[52.34%] lg:top-[25.24%] lg:aspect-auto lg:h-[58.89%] lg:w-[47.66%]"
+        >
+          <Image
+            src={hero.photo}
+            alt={hero.signatureName}
+            fill
+            priority
+            sizes="(min-width: 1024px) 50vw, 100vw"
+            className="object-cover object-left-bottom"
+          />
+        </ParallaxLayer>
 
-      <ParallaxLayer
-        x={springX}
-        y={springY}
-        depth={12}
-        className="relative z-10 px-6 lg:absolute lg:left-[75.08%] lg:top-[23.32%] lg:px-0"
-      >
-        <p className="text-[clamp(0.7rem,0.95vw,0.875rem)] whitespace-nowrap">
-          {hero.signatureName}
-        </p>
-      </ParallaxLayer>
+        <ParallaxLayer
+          x={springX}
+          y={springY}
+          depth={12}
+          className="absolute left-6 top-8 z-10 lg:left-[75.08%] lg:top-[23.32%]"
+        >
+          <p className="text-[clamp(0.7rem,0.95vw,0.875rem)] whitespace-nowrap">
+            {hero.signatureName}
+          </p>
+        </ParallaxLayer>
+      </div>
     </section>
   );
 }
