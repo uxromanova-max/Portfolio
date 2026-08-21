@@ -18,6 +18,7 @@ export type HeroContent = {
   ctaHref: string;
   photo: {
     desktop: string;
+    desktopAfter: string;
     mobile: string;
   };
 };

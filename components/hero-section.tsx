@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion, useMotionValue, useSpring, useTransform, type MotionValue } from "framer-motion";
 import type { PointerEvent, ReactNode } from "react";
+import { PhotoReveal } from "@/components/photo-reveal";
 import { SiteHeader } from "@/components/site-header";
 import { useParallaxEnabled } from "@/lib/use-parallax-enabled";
 import type { HeroContent, NavItem } from "@/lib/content/types";
@@ -125,13 +126,11 @@ export function HeroSection({ nav, hero }: HeroSectionProps) {
             sizes="100vw"
             className="block object-cover lg:hidden"
           />
-          <Image
-            src={hero.photo.desktop}
+          <PhotoReveal
+            baseSrc={hero.photo.desktop}
+            revealSrc={hero.photo.desktopAfter}
             alt={hero.signatureName}
-            fill
-            priority
-            sizes="50vw"
-            className="hidden object-cover lg:block"
+            className="absolute inset-0 hidden lg:block"
           />
         </ParallaxLayer>
 

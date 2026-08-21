@@ -26,6 +26,7 @@
     "ctaHref": "#cta",
     "photo": {
       "desktop": "/images/brand/hero-desktop.webp",
+      "desktopAfter": "/images/brand/hero-desktop-after.webp",
       "mobile": "/images/brand/hero-mobile.webp"
     }
   },
