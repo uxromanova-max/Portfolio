@@ -56,7 +56,7 @@ export function HeroSection({ nav, hero }: HeroSectionProps) {
     <section
       onPointerMove={handlePointerMove}
       onPointerLeave={handlePointerLeave}
-      className="relative flex w-full flex-col gap-10 overflow-hidden bg-[#f3f3f3] py-10 lg:block lg:aspect-[1280/832] lg:gap-0 lg:py-0"
+      className="relative flex w-full flex-col gap-10 overflow-hidden bg-[#f3f3f3] py-10 lg:block lg:h-dvh lg:gap-0 lg:py-0"
     >
       {/* Grid bg — excluded from parallax, desktop-only texture */}
       <div className="absolute inset-0 hidden lg:block" aria-hidden>
@@ -70,7 +70,7 @@ export function HeroSection({ nav, hero }: HeroSectionProps) {
         x={springX}
         y={springY}
         depth={20}
-        className="relative z-10 px-6 lg:absolute lg:left-[4.375%] lg:top-[15.26%] lg:px-0"
+        className="relative z-10 px-6 lg:absolute lg:left-[4.375%] lg:top-[127px] lg:px-0"
       >
         <h1 className="font-headline text-[clamp(1.5rem,7.5vw,3.875rem)] leading-[1.03] text-black uppercase lg:whitespace-nowrap">
           {hero.headlineLines.map((line) => (
@@ -85,7 +85,7 @@ export function HeroSection({ nav, hero }: HeroSectionProps) {
         x={springX}
         y={springY}
         depth={14}
-        className="relative z-10 pr-6 pl-[33%] lg:absolute lg:left-[9.53%] lg:top-[53%] lg:px-0"
+        className="relative z-10 pr-6 pl-[33%] lg:absolute lg:left-[9.53%] lg:bottom-[231px] lg:px-0"
       >
         <p className="text-[clamp(0.875rem,4vw,1.25rem)] uppercase lg:text-[clamp(0.9rem,1.56vw,1.25rem)]">
           {hero.eyebrowKicker}
@@ -96,7 +96,7 @@ export function HeroSection({ nav, hero }: HeroSectionProps) {
         x={springX}
         y={springY}
         depth={16}
-        className="relative z-10 px-6 lg:absolute lg:left-[15.08%] lg:top-[57.45%] lg:w-[35.08%] lg:px-0"
+        className="relative z-10 px-6 lg:absolute lg:left-[15.08%] lg:bottom-[102px] lg:w-[35.08%] lg:px-0"
       >
         <p className="text-[clamp(1.1rem,5vw,1.75rem)] uppercase lg:text-[clamp(1rem,2.19vw,1.75rem)] leading-[1.15]">
           {hero.headlineSupportingLine.map((segment) => (
@@ -110,13 +110,15 @@ export function HeroSection({ nav, hero }: HeroSectionProps) {
         </p>
       </ParallaxLayer>
 
-      {/* Photo + signature share a coordinate frame on mobile (signature overlays the photo's corner) */}
-      <div className="relative lg:contents">
+      {/* Photo + signature share a coordinate frame — signature overlays the photo's corner on
+          mobile, and is pinned relative to the photo box (not the viewport) on desktop, since
+          the photo itself is bottom-anchored and its on-screen position shifts with viewport height */}
+      <div className="relative lg:absolute lg:bottom-0 lg:left-[52.34%] lg:aspect-[610/490] lg:w-[47.66%]">
         <ParallaxLayer
           x={springX}
           y={springY}
           depth={10}
-          className="relative z-0 aspect-[402/322] w-full lg:absolute lg:left-[52.34%] lg:top-[25.24%] lg:aspect-auto lg:h-[58.89%] lg:w-[47.66%]"
+          className="relative z-0 aspect-[402/322] w-full lg:absolute lg:inset-0 lg:aspect-auto lg:h-full lg:w-full"
         >
           <Image
             src={hero.photo.mobile}
@@ -138,7 +140,7 @@ export function HeroSection({ nav, hero }: HeroSectionProps) {
           x={springX}
           y={springY}
           depth={12}
-          className="absolute left-6 top-8 z-10 max-w-[80px] lg:left-[75.08%] lg:top-[23.32%] lg:max-w-none"
+          className="absolute left-6 top-8 z-10 max-w-[80px] lg:left-[47.7%] lg:top-[-16px] lg:max-w-none"
         >
           <p className="text-[clamp(0.7rem,0.95vw,0.875rem)] lg:whitespace-nowrap">
             {hero.signatureName}
