@@ -9,7 +9,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-michroma);
-  --font-headline: var(--font-special-gothic);
+  --font-headline: var(--font-prosto-one);
 }
 
 body {

@@ -69,15 +69,9 @@ export function HeroSection({ nav, hero }: HeroSectionProps) {
         x={springX}
         y={springY}
         depth={20}
-        className="relative z-10 px-6 lg:absolute lg:left-[4.375%] lg:top-[15.26%] lg:w-[67.58%] lg:px-0"
+        className="relative z-10 px-6 lg:absolute lg:left-[4.375%] lg:top-[15.26%] lg:px-0"
       >
-        <h1
-          className="bg-clip-text font-headline text-[clamp(1.5rem,7.5vw,3.875rem)] leading-[0.95] text-transparent uppercase"
-          style={{
-            backgroundImage:
-              "linear-gradient(130.57deg, rgb(0,0,0) 11.732%, rgba(0,0,0,0) 69.195%)",
-          }}
-        >
+        <h1 className="font-headline text-[clamp(1.5rem,7.5vw,3.875rem)] leading-[1.03] text-black uppercase lg:whitespace-nowrap">
           {hero.headlineLines.map((line) => (
             <span key={line} className="block">
               {line}
@@ -90,19 +84,26 @@ export function HeroSection({ nav, hero }: HeroSectionProps) {
         x={springX}
         y={springY}
         depth={14}
-        className="relative z-10 px-6 lg:absolute lg:left-[4.375%] lg:top-[59.74%] lg:px-0"
+        className="relative z-10 px-6 lg:absolute lg:left-[9.53%] lg:top-[53%] lg:px-0"
       >
-        <p className="text-[clamp(1.1rem,2.19vw,1.75rem)] uppercase">{hero.eyebrowKicker}</p>
+        <p className="text-[clamp(0.9rem,1.56vw,1.25rem)] uppercase">{hero.eyebrowKicker}</p>
       </ParallaxLayer>
 
       <ParallaxLayer
         x={springX}
         y={springY}
         depth={16}
-        className="relative z-10 px-6 lg:absolute lg:left-[15.08%] lg:top-[64.54%] lg:w-[40.16%] lg:px-0"
+        className="relative z-10 px-6 lg:absolute lg:left-[15.08%] lg:top-[57.45%] lg:w-[35.08%] lg:px-0"
       >
-        <p className="text-[clamp(1.1rem,2.66vw,2.125rem)] leading-[1.1] uppercase">
-          {hero.headlineSupportingLine}
+        <p className="text-[clamp(1rem,2.19vw,1.75rem)] leading-[1.15] uppercase">
+          {hero.headlineSupportingLine.map((segment) => (
+            <span
+              key={segment.text}
+              className={segment.highlight ? "text-[#5095a4]" : undefined}
+            >
+              {segment.text}
+            </span>
+          ))}
         </p>
       </ParallaxLayer>
 
@@ -110,15 +111,15 @@ export function HeroSection({ nav, hero }: HeroSectionProps) {
         x={springX}
         y={springY}
         depth={10}
-        className="relative z-0 aspect-[4/5] w-full lg:absolute lg:left-[24.375%] lg:top-[25.24%] lg:aspect-auto lg:h-[74.88%] lg:w-[87.19%]"
+        className="relative z-0 aspect-[4/5] w-full lg:absolute lg:left-[52.34%] lg:top-[25.24%] lg:aspect-auto lg:h-[58.89%] lg:w-[47.66%]"
       >
         <Image
           src={hero.photo}
           alt={hero.signatureName}
           fill
           priority
-          sizes="(min-width: 1024px) 90vw, 100vw"
-          className="object-cover"
+          sizes="(min-width: 1024px) 50vw, 100vw"
+          className="object-cover object-bottom"
         />
       </ParallaxLayer>
 
@@ -126,7 +127,7 @@ export function HeroSection({ nav, hero }: HeroSectionProps) {
         x={springX}
         y={springY}
         depth={12}
-        className="relative z-10 px-6 lg:absolute lg:left-[79.69%] lg:top-[20.31%] lg:px-0"
+        className="relative z-10 px-6 lg:absolute lg:left-[75.08%] lg:top-[23.32%] lg:px-0"
       >
         <p className="text-[clamp(0.7rem,0.95vw,0.875rem)] whitespace-nowrap">
           {hero.signatureName}

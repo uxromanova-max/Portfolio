@@ -3,10 +3,15 @@ export type NavItem = {
   href: string;
 };
 
+export type TextSegment = {
+  text: string;
+  highlight?: boolean;
+};
+
 export type HeroContent = {
   eyebrowKicker: string;
   headlineLines: string[];
-  headlineSupportingLine: string;
+  headlineSupportingLine: TextSegment[];
   subheadline: string;
   signatureName: string;
   ctaLabel: string;

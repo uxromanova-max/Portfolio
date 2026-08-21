@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Michroma, Special_Gothic_Expanded_One } from "next/font/google";
+import { Michroma, Prosto_One } from "next/font/google";
 import "./globals.css";
 
 const michroma = Michroma({
@@ -8,8 +8,8 @@ const michroma = Michroma({
   weight: "400",
 });
 
-const specialGothicExpandedOne = Special_Gothic_Expanded_One({
-  variable: "--font-special-gothic",
+const prostoOne = Prosto_One({
+  variable: "--font-prosto-one",
   subsets: ["latin"],
   weight: "400",
 });
@@ -22,7 +22,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${michroma.variable} ${specialGothicExpandedOne.variable} h-full antialiased`}
+      className={`${michroma.variable} ${prostoOne.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-sans">{children}</body>
     </html>

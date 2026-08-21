@@ -15,7 +15,11 @@
   "hero": {
     "eyebrowKicker": "more than once",
     "headlineLines": ["I build brands", "from zero,", "end-to-end"],
-    "headlineSupportingLine": "without a Brand Manager title to hide behind.",
+    "headlineSupportingLine": [
+      { "text": "without " },
+      { "text": "a Brand Manager", "highlight": true },
+      { "text": " title to hide behind." }
+    ],
     "subheadline": "Product & Brand builder with 6+ years across brand strategy, creative direction, and go-to-market execution — most recently as the founder who owned every brand decision for a consumer product, from first positioning line to the campaign that sold it.",
     "signatureName": "Diana Romanova",
     "ctaLabel": "Get in touch",
