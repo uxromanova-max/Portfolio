@@ -93,7 +93,7 @@ export function HeroSection({ nav, hero }: HeroSectionProps) {
         <p className="pr-6 pl-[33%] text-[clamp(0.875rem,4vw,1.25rem)] uppercase lg:pr-0 lg:pl-0 lg:text-[1.25rem]">
           {hero.eyebrowKicker}
         </p>
-        <p className="px-6 text-[clamp(1.1rem,5vw,1.75rem)] uppercase leading-[1.15] lg:w-[35.08vw] lg:px-0 lg:ml-[71px] lg:text-[1.75rem]">
+        <p className="px-6 text-[clamp(1.1rem,5vw,1.75rem)] uppercase leading-[1.15] lg:w-[449px] lg:px-0 lg:ml-[71px] lg:text-[1.75rem]">
           {hero.headlineSupportingLine.map((segment) => (
             <span
               key={segment.text}
